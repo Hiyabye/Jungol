@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+  double a, b;
+  printf("yard? ");
+  scanf("%lf", &a);
+  b = a * 91.44;
+  printf("%.1lfyard = %.1lfcm", a, b);
+  return 0;
+}
