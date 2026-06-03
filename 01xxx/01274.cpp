@@ -7,9 +7,7 @@ void solve(void) {
   cin >> s;
 
   int ans = s[0] == '1' ? -128 : 0;
-  for (int i = 1; i < 8; i++) {
-    ans += (s[i] - '0') * (1 << (7 - i));
-  }
+  for (int i = 1; i < 8; i++) { ans += (s[i] - '0') * (1 << (7 - i)); }
   cout << ans;
 }
 

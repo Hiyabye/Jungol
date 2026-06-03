@@ -7,9 +7,7 @@ void solve(void) {
   cin >> s;
 
   int ans = 10;
-  for (int i = 1; i < s.length(); i++) {
-    ans += (s[i] != s[i - 1]) ? 10 : 5;
-  }
+  for (int i = 1; i < s.length(); i++) { ans += (s[i] != s[i - 1]) ? 10 : 5; }
   cout << ans;
 }
 

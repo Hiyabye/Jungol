@@ -11,17 +11,14 @@ void solve(void) {
     int x, y;
     cin >> x >> y;
     for (int i = x; i < x + 10; i++) {
-      for (int j = y; j < y + 10; j++) {
-        v[i][j] = true;
-      }
+      for (int j = y; j < y + 10; j++) { v[i][j] = true; }
     }
   }
 
   int ans = 0;
   for (int i = 0; i <= 100; i++) {
     for (int j = 0; j <= 100; j++) {
-      if (v[i][j])
-        ans++;
+      if (v[i][j]) ans++;
     }
   }
   cout << ans;

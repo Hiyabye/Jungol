@@ -6,9 +6,7 @@ void solve(void) {
   cin >> n;
 
   int ans = 1;
-  while (ans * (ans + 1) / 2 <= n) {
-    ans++;
-  }
+  while (ans * (ans + 1) / 2 <= n) { ans++; }
   cout << ans << " " << ans * (ans + 1) / 2;
 }
 

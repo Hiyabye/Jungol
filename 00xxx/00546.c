@@ -7,9 +7,7 @@ int main(void) {
     sum += num;
   }
   printf("avg : %.1lf\n", (double)sum / n);
-  if ((double)sum / n >= 80)
-    printf("pass");
-  else
-    printf("fail");
+  if ((double)sum / n >= 80) printf("pass");
+  else printf("fail");
   return 0;
 }

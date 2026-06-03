@@ -10,8 +10,7 @@ void solve(void) {
   while (n--) {
     int x;
     cin >> x;
-    while (!s.empty() && s.top() >= x)
-      s.pop();
+    while (!s.empty() && s.top() >= x) s.pop();
     cout << (s.empty() ? 0 : s.top()) << " ";
     s.push(x);
   }

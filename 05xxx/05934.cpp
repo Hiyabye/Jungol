@@ -11,21 +11,13 @@ void solve(void) {
 
   int k = n / 2 + 1;
   for (int i = k; i > 1; i--) {
-    for (int j = i; j < k; j++) {
-      cout << " ";
-    }
-    for (int j = 0; j < i; j++) {
-      cout << "*";
-    }
+    for (int j = i; j < k; j++) { cout << " "; }
+    for (int j = 0; j < i; j++) { cout << "*"; }
     cout << "\n";
   }
   for (int i = 1; i <= k; i++) {
-    for (int j = 1; j < k; j++) {
-      cout << " ";
-    }
-    for (int j = 0; j < i; j++) {
-      cout << "*";
-    }
+    for (int j = 1; j < k; j++) { cout << " "; }
+    for (int j = 0; j < i; j++) { cout << "*"; }
     cout << "\n";
   }
 }

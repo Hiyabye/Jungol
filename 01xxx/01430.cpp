@@ -9,8 +9,7 @@ void solve(void) {
   string s = to_string(a * b * c);
   for (int i = 0; i < 10; i++) {
     int cnt = 0;
-    for (char c : s)
-      cnt += (c - '0' == i);
+    for (char c : s) cnt += (c - '0' == i);
     cout << cnt << "\n";
   }
 }

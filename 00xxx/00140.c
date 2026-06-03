@@ -8,8 +8,7 @@ int main(void) {
       i--;
     }
   }
-  for (j = 0; j < i; j++)
-    sum += arr[j];
+  for (j = 0; j < i; j++) sum += arr[j];
   printf("%d %d", sum, sum / i);
   return 0;
 }

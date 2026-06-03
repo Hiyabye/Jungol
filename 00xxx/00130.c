@@ -2,7 +2,6 @@
 int main(void) {
   int i, n;
   scanf("%d", &n);
-  for (i = 0; i < n; i++)
-    printf("JUNGOL\n");
+  for (i = 0; i < n; i++) printf("JUNGOL\n");
   return 0;
 }

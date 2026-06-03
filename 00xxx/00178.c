@@ -9,7 +9,6 @@ int main(void) {
 
 int calculate(int n) {
   int i, result = 1;
-  for (i = 0; i < n; i++)
-    result *= 2;
+  for (i = 0; i < n; i++) result *= 2;
   return result;
 }

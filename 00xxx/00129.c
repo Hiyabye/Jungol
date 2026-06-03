@@ -9,10 +9,8 @@ int main(void) {
     scanf("%d", &b);
     printf("Triangle width = %.1lf\nContinue? ", (double)a * b / 2);
     scanf(" %c", &choice);
-    if (choice == 'Y' || choice == 'y')
-      continue;
-    else
-      break;
+    if (choice == 'Y' || choice == 'y') continue;
+    else break;
   }
   return 0;
 }

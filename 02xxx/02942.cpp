@@ -7,9 +7,7 @@ void solve(void) {
   cin >> n;
 
   vector<long long> dp = {0, 1, 1, 1, 2, 2};
-  for (int i = 6; i <= 100; i++) {
-    dp[i] = dp[i - 1] + dp[i - 5];
-  }
+  for (int i = 6; i <= 100; i++) { dp[i] = dp[i - 1] + dp[i - 5]; }
   cout << dp[n];
 }
 

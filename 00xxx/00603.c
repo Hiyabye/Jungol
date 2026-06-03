@@ -7,8 +7,7 @@ int main(void) {
   gets(line);
   token = strtok(line, " ");
   while (token != NULL) {
-    if (i % 2 != 0)
-      printf("%s\n", token);
+    if (i % 2 != 0) printf("%s\n", token);
     token = strtok(NULL, " ");
     i++;
   }

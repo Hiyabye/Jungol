@@ -10,7 +10,6 @@ int main(void) {
 
 int add(int n) {
   int i, sum = 0;
-  for (i = 0; i <= n; i++)
-    sum += i;
+  for (i = 0; i <= n; i++) sum += i;
   return sum;
 }

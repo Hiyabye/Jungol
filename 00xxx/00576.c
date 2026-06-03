@@ -11,14 +11,9 @@ int main(void) {
 }
 
 int calculate(int a, int b, char how) {
-  if (how == '+')
-    return a + b;
-  else if (how == '-')
-    return a - b;
-  else if (how == '*')
-    return a * b;
-  else if (how == '/')
-    return a / b;
-  else
-    return 0;
+  if (how == '+') return a + b;
+  else if (how == '-') return a - b;
+  else if (how == '*') return a * b;
+  else if (how == '/') return a / b;
+  else return 0;
 }

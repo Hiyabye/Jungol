@@ -3,8 +3,7 @@ void macro(int num[]);
 
 int main(void) {
   int i, num[7];
-  for (i = 0; i < 7; i++)
-    scanf("%d", &num[i]);
+  for (i = 0; i < 7; i++) scanf("%d", &num[i]);
   macro(num);
   return 0;
 }
@@ -20,6 +19,5 @@ void macro(int num[]) {
       }
     }
   }
-  for (i = 0; i < 7; i++)
-    printf("%d ", num[i]);
+  for (i = 0; i < 7; i++) printf("%d ", num[i]);
 }

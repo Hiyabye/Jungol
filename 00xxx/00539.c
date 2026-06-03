@@ -5,8 +5,7 @@ int main(void) {
     scanf("%d", &i);
     sum += i;
     count++;
-    if (i >= 100)
-      break;
+    if (i >= 100) break;
   }
   printf("%d\n%.1lf", sum, (double)sum / count);
   return 0;

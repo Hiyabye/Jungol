@@ -9,8 +9,7 @@ int main(void) {
     if (sum / 4 >= 80) {
       printf("pass\n");
       count++;
-    } else
-      printf("fail\n");
+    } else printf("fail\n");
     sum = 0;
   }
   printf("Successful : %d\n", count);

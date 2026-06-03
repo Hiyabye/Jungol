@@ -10,8 +10,6 @@ int main(void) {
 
 int calculate(int n) {
   int i, result = 0;
-  for (i = 1; i <= n; i++) {
-    result = result + i;
-  }
+  for (i = 1; i <= n; i++) { result = result + i; }
   return result;
 }

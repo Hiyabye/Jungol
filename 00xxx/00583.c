@@ -11,22 +11,16 @@ int main(void) {
 
 void compare(double a, double b, double c) {
   if (a >= b) {
-    if (b >= c)
-      calculate(a, b, c);
+    if (b >= c) calculate(a, b, c);
     else {
-      if (a >= c)
-        calculate(a, c, b);
-      else
-        calculate(c, a, b);
+      if (a >= c) calculate(a, c, b);
+      else calculate(c, a, b);
     }
   } else {
-    if (a >= c)
-      calculate(b, a, c);
+    if (a >= c) calculate(b, a, c);
     else {
-      if (b >= c)
-        calculate(b, c, a);
-      else
-        calculate(c, b, a);
+      if (b >= c) calculate(b, c, a);
+      else calculate(c, b, a);
     }
   }
 }

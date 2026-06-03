@@ -29,7 +29,6 @@ int main(void) {
   cin.tie(nullptr);
 
   int a, b;
-  while (cin >> a >> b)
-    solve(a, b);
+  while (cin >> a >> b) solve(a, b);
   return 0;
 }

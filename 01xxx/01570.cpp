@@ -14,14 +14,10 @@ void solve(void) {
   for (int i = 0; i < (n - 1) / 2; i++) {
     int p, q;
     cin >> p >> q;
-    if (p < x)
-      lq.push(p);
-    else
-      rq.push(p);
-    if (q < x)
-      lq.push(q);
-    else
-      rq.push(q);
+    if (p < x) lq.push(p);
+    else rq.push(p);
+    if (q < x) lq.push(q);
+    else rq.push(q);
 
     if (lq.size() > rq.size()) {
       int a = lq.top();

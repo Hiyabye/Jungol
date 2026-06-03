@@ -3,8 +3,7 @@ int main(void) {
   int a, i = 0, count = 0, n[1000] = {'\0'};
   while (1) {
     scanf("%d", &n[i]);
-    if (n[i] == 0)
-      break;
+    if (n[i] == 0) break;
     i++;
   }
   for (a = 0; a < i; a++) {
@@ -15,8 +14,7 @@ int main(void) {
       }
     }
   }
-  if (count > 0)
-    printf("\n");
+  if (count > 0) printf("\n");
   printf("%d", count);
   return 0;
 }

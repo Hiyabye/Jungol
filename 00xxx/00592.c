@@ -15,8 +15,7 @@ int calculate(int num) {
 
   for (i = 0; i < 9; i++) {
     result += (num % 10) * (num % 10);
-    if (num < 10)
-      break;
+    if (num < 10) break;
     num /= 10;
   }
   return result;

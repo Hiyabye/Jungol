@@ -6,9 +6,7 @@ void solve(void) {
   cin >> n;
 
   int ans = 1;
-  for (int i = 1; i <= n; i++) {
-    ans *= i;
-  }
+  for (int i = 1; i <= n; i++) { ans *= i; }
   cout << ans;
 }
 

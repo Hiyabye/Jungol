@@ -10,7 +10,6 @@ int main(void) {
       break;
     }
   }
-  if (success == 0)
-    printf("none");
+  if (success == 0) printf("none");
   return 0;
 }

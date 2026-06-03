@@ -11,9 +11,7 @@ int main(void) {
     scanf("%d", &p[i].height);
     scanf("%d", &p[i].weight);
   }
-  if (p[0].height > p[1].height && p[0].weight > p[1].weight)
-    printf("1");
-  else
-    printf("0");
+  if (p[0].height > p[1].height && p[0].weight > p[1].weight) printf("1");
+  else printf("0");
   return 0;
 }

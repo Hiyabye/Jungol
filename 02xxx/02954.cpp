@@ -4,8 +4,7 @@ using namespace std;
 
 inline bool check(const unordered_set<int> &us, int mask) {
   for (const int &x : us) {
-    if ((mask & x) == x)
-      return false;
+    if ((mask & x) == x) return false;
   }
   return true;
 }
@@ -22,8 +21,7 @@ void solve(void) {
 
   int ans = 0;
   for (int mask = 0; mask < (1 << n); mask++) {
-    if (check(us, mask))
-      ans++;
+    if (check(us, mask)) ans++;
   }
   cout << ans;
 }

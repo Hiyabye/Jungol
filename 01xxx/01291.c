@@ -11,16 +11,12 @@ int main(void) {
 
   if (s <= e) {
     for (i = 1; i <= 9; i++) {
-      for (j = s; j <= e; j++) {
-        printf("%d * %d = %2d   ", j, i, j * i);
-      }
+      for (j = s; j <= e; j++) { printf("%d * %d = %2d   ", j, i, j * i); }
       printf("\n");
     }
   } else {
     for (i = 1; i <= 9; i++) {
-      for (j = s; j >= e; j--) {
-        printf("%d * %d = %2d   ", j, i, j * i);
-      }
+      for (j = s; j >= e; j--) { printf("%d * %d = %2d   ", j, i, j * i); }
       printf("\n");
     }
   }

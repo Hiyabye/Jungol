@@ -14,8 +14,7 @@ int main(void) {
   }
   for (i = 0; i < 10; i++) {
     for (j = 0; j < 10; j++) {
-      if (p[i].score < p[j].score)
-        p[i].rank++;
+      if (p[i].score < p[j].score) p[i].rank++;
     }
   }
   fprintf(stdout, "Name Score Rank\n");

@@ -5,7 +5,6 @@ int main(void) {
     scanf("%d", &n);
     num[n - 1]++;
   }
-  for (i = 0; i < 6; i++)
-    printf("%d : %d\n", i + 1, num[i]);
+  for (i = 0; i < 6; i++) printf("%d : %d\n", i + 1, num[i]);
   return 0;
 }

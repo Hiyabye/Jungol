@@ -19,10 +19,8 @@ int count(double a, double b) {
     a = temp;
   }
   while (1) {
-    if (i >= a && i <= b)
-      count++;
-    else if (i > b)
-      break;
+    if (i >= a && i <= b) count++;
+    else if (i > b) break;
     i++;
   }
   return count;

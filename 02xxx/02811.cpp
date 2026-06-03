@@ -2,11 +2,9 @@
 using namespace std;
 
 inline bool prime(int n) {
-  if (n < 2)
-    return false;
+  if (n < 2) return false;
   for (int i = 2; i * i <= n; i++)
-    if (n % i == 0)
-      return false;
+    if (n % i == 0) return false;
   return true;
 }
 
@@ -28,7 +26,6 @@ int main(void) {
   cin.tie(nullptr);
 
   int t = 5;
-  while (t--)
-    solve();
+  while (t--) solve();
   return 0;
 }

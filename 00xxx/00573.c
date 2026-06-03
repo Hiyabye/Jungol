@@ -12,8 +12,6 @@ void square(int a) {
   printf("1 ");
   for (int num = 2; num <= a * a; num++) {
     printf("%d ", num);
-    if (num % a == 0) {
-      printf("\n");
-    }
+    if (num % a == 0) { printf("\n"); }
   }
 }

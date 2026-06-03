@@ -18,9 +18,7 @@ void solve(void) {
     cout << 0;
   } else {
     auto it = s.begin();
-    while (--k) {
-      it++;
-    }
+    while (--k) { it++; }
     cout << *it;
   }
 }

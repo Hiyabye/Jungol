@@ -13,9 +13,7 @@ int main(void) {
 
 void output(void) {
   int i;
-  for (i = 1; i <= n; i++) {
-    printf("%d ", arr[i]);
-  }
+  for (i = 1; i <= n; i++) { printf("%d ", arr[i]); }
   printf("\n");
 }
 

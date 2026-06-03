@@ -5,9 +5,7 @@ using namespace std;
 inline long long power(long long base, long long exp) {
   long long ret = 1;
   while (exp) {
-    if (exp & 1) {
-      ret = ret * base % MOD;
-    }
+    if (exp & 1) { ret = ret * base % MOD; }
     base = base * base % MOD;
     exp >>= 1;
   }

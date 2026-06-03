@@ -7,7 +7,6 @@ int main(void) {
     a = b;
     b = temp;
   }
-  for (; a <= b; a++)
-    printf("%d ", a);
+  for (; a <= b; a++) printf("%d ", a);
   return 0;
 }

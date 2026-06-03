@@ -18,9 +18,7 @@ void solve(void) {
       int x;
       cin >> x;
       auto it = s.find(x);
-      if (it != s.end()) {
-        s.erase(it);
-      }
+      if (it != s.end()) { s.erase(it); }
     } else if (op == 'e') {
       int x;
       cin >> x;
@@ -28,9 +26,7 @@ void solve(void) {
     }
   }
 
-  for (int x : s) {
-    cout << x << " ";
-  }
+  for (int x : s) { cout << x << " "; }
 }
 
 int main(void) {

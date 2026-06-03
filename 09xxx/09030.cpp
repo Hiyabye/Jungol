@@ -6,9 +6,7 @@ void solve(void) {
   cin >> n;
 
   cout << n << "\n";
-  if (n > 10) {
-    cout << "10보다 큰 수를 입력하셨습니다.";
-  }
+  if (n > 10) { cout << "10보다 큰 수를 입력하셨습니다."; }
 }
 
 int main(void) {

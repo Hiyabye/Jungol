@@ -24,9 +24,7 @@ void solve(void) {
   int x;
   cin >> x;
   auto it = s.begin();
-  while (--x && it != s.end()) {
-    it++;
-  }
+  while (--x && it != s.end()) { it++; }
 
   if (it != s.end()) {
     cout << *it;

@@ -10,25 +10,18 @@ void solve(void) {
     int a, b;
     cin >> a >> b;
     for (int i = a; i < a + 10; i++) {
-      for (int j = b; j < b + 10; j++) {
-        v[i][j] = true;
-      }
+      for (int j = b; j < b + 10; j++) { v[i][j] = true; }
     }
   }
 
   int ans = 0;
   for (int i = 0; i <= 100; i++) {
     for (int j = 0; j <= 100; j++) {
-      if (!v[i][j])
-        continue;
-      if (i == 0 || !v[i - 1][j])
-        ans++;
-      if (i == 100 || !v[i + 1][j])
-        ans++;
-      if (j == 0 || !v[i][j - 1])
-        ans++;
-      if (j == 100 || !v[i][j + 1])
-        ans++;
+      if (!v[i][j]) continue;
+      if (i == 0 || !v[i - 1][j]) ans++;
+      if (i == 100 || !v[i + 1][j]) ans++;
+      if (j == 0 || !v[i][j - 1]) ans++;
+      if (j == 100 || !v[i][j + 1]) ans++;
     }
   }
   cout << ans;

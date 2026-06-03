@@ -6,9 +6,7 @@ void solve(void) {
   cin >> n;
 
   for (int i = 1; i <= n; i++) {
-    for (int j = 0; j < n; j++) {
-      cout << j * n + i << " ";
-    }
+    for (int j = 0; j < n; j++) { cout << j * n + i << " "; }
     cout << "\n";
   }
 }

@@ -8,10 +8,8 @@ void solve(void) {
 
   int a = 0, b = 0;
   for (int i = 2; i < s.length(); i++) {
-    if (s[i - 2] == 'K' && s[i - 1] == 'O' && s[i] == 'I')
-      a++;
-    else if (s[i - 2] == 'I' && s[i - 1] == 'O' && s[i] == 'I')
-      b++;
+    if (s[i - 2] == 'K' && s[i - 1] == 'O' && s[i] == 'I') a++;
+    else if (s[i - 2] == 'I' && s[i - 1] == 'O' && s[i] == 'I') b++;
   }
   cout << a << "\n" << b;
 }

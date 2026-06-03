@@ -17,14 +17,10 @@ void solve(void) {
       t = "";
     }
   }
-  if (!t.empty()) {
-    v.push_back(t);
-  }
+  if (!t.empty()) { v.push_back(t); }
 
   while (!v.empty()) {
-    if (v.size() % 2 == 0) {
-      cout << v.back() << " ";
-    }
+    if (v.size() % 2 == 0) { cout << v.back() << " "; }
     v.pop_back();
   }
 }

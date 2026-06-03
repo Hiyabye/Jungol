@@ -10,6 +10,5 @@ int main(void) {
 
 void print_macro(int n) {
   int i;
-  for (i = 0; i < n; i++)
-    printf("recursive\n");
+  for (i = 0; i < n; i++) printf("recursive\n");
 }

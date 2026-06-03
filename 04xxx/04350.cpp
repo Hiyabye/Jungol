@@ -15,9 +15,7 @@ void solve(void) {
 
   long long ans = 0;
   vector<int> cnt(21, 0);
-  for (int i = 0; i < k; i++) {
-    ans += cnt[v[i]]++;
-  }
+  for (int i = 0; i < k; i++) { ans += cnt[v[i]]++; }
   for (int i = k; i < n; i++) {
     ans += cnt[v[i]]++;
     cnt[v[i - k]]--;

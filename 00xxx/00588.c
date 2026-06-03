@@ -10,6 +10,5 @@ int main(void) {
 
 void num_down(int n) {
   int i;
-  for (i = n; i > 0; i--)
-    printf("%d ", i);
+  for (i = n; i > 0; i--) printf("%d ", i);
 }

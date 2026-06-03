@@ -5,13 +5,9 @@ void bubble_sort(int n);
 int main(void) {
   int i, n;
   scanf("%d", &n);
-  for (i = 0; i < n; i++) {
-    scanf("%d", &a[i]);
-  }
+  for (i = 0; i < n; i++) { scanf("%d", &a[i]); }
   bubble_sort(n);
-  for (i = n; i > 0; i--) {
-    printf("%d ", a[i - 1]);
-  }
+  for (i = n; i > 0; i--) { printf("%d ", a[i - 1]); }
   return 0;
 }
 

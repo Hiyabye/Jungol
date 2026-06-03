@@ -14,8 +14,7 @@ int main(void) {
     scanf("%s", p[i].name);
     scanf("%s", p[i].phone);
     scanf("%s", p[i].address);
-    if (i == 0)
-      strcpy(first, p[i].name);
+    if (i == 0) strcpy(first, p[i].name);
     else {
       if (strcmp(p[i].name, first) < 0) {
         strcpy(first, p[i].name);

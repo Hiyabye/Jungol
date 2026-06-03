@@ -19,8 +19,7 @@ bool solve(void) {
   while (m--) {
     int b;
     cin >> b;
-    if (s.find(b) != s.end())
-      ans = true;
+    if (s.find(b) != s.end()) ans = true;
   }
   return ans;
 }
@@ -30,7 +29,6 @@ int main(void) {
   cin.tie(nullptr);
 
   int t = 4;
-  while (t--)
-    cout << (solve() ? "YES" : "NO") << "\n";
+  while (t--) cout << (solve() ? "YES" : "NO") << "\n";
   return 0;
 }

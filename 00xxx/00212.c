@@ -17,7 +17,6 @@ int main(void) {
       }
     }
   }
-  for (i = 0; i < n; i++)
-    printf("%.1lf\n", sum[i] / 3.0);
+  for (i = 0; i < n; i++) printf("%.1lf\n", sum[i] / 3.0);
   return 0;
 }

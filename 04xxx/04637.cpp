@@ -21,9 +21,7 @@ void solve(void) {
     }
   }
 
-  for (int x : s) {
-    cout << x << " ";
-  }
+  for (int x : s) { cout << x << " "; }
 }
 
 int main(void) {

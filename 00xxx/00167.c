@@ -9,8 +9,7 @@ int main() {
     }
   }
 
-  for (i = 0; i < 4; i++)
-    printf("%d ", (arr[i][0] + arr[i][1]) / 2);
+  for (i = 0; i < 4; i++) printf("%d ", (arr[i][0] + arr[i][1]) / 2);
   printf("\n");
 
   for (i = 0; i < 2; i++)

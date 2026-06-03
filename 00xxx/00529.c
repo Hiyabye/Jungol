@@ -4,8 +4,6 @@ int main() {
   scanf("%d %d", &h, &w);
   bemahn = w + 100 - h;
   printf("%d", bemahn);
-  if (bemahn > 0) {
-    printf("\nObesity");
-  }
+  if (bemahn > 0) { printf("\nObesity"); }
   return 0;
 }
