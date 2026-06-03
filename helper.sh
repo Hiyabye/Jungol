@@ -39,7 +39,8 @@ case $COMMAND in
         ;;
     commit)
         if [ -f "$FILE_PATH" ]; then
-            git add "$FILE_PATH"
+            python3 scripts/generate_readme.py
+            git add "$FILE_PATH" README.md
             git commit -m "Add ${PADDED_NUM}.cpp"
             echo "📦 Committed: ${PADDED_NUM}.cpp"
         else
