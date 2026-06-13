@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void solve(void) {
+  int n;
+  cin >> n;
+
+  while (n--) cout << "C언어 프로그래밍\n";
+}
+
+int main(void) {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+
+  solve();
+  return 0;
+}
