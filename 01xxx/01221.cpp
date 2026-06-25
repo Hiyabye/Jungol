@@ -3,40 +3,50 @@
 using namespace std;
 
 void solve(void) {
-  int m; cin >> m;
+  int m;
+  cin >> m;
 
   stack<int> s;
   while (m--) {
-    char x; cin >> x;
+    char x;
+    cin >> x;
     switch (x) {
-      case '+': {
-        int b = s.top(); s.pop();
-        int a = s.top(); s.pop();
-        s.push(a + b);
-        break;
-      }
-      case '-': {
-        int b = s.top(); s.pop();
-        int a = s.top(); s.pop();
-        s.push(a - b);
-        break;
-      }
-      case '*': {
-        int b = s.top(); s.pop();
-        int a = s.top(); s.pop();
-        s.push(a * b);
-        break;
-      }
-      case '/': {
-        int b = s.top(); s.pop();
-        int a = s.top(); s.pop();
-        s.push(a / b);
-        break;
-      }
-      default: {
-        s.push(x - '0');
-        break;
-      }
+    case '+': {
+      int b = s.top();
+      s.pop();
+      int a = s.top();
+      s.pop();
+      s.push(a + b);
+      break;
+    }
+    case '-': {
+      int b = s.top();
+      s.pop();
+      int a = s.top();
+      s.pop();
+      s.push(a - b);
+      break;
+    }
+    case '*': {
+      int b = s.top();
+      s.pop();
+      int a = s.top();
+      s.pop();
+      s.push(a * b);
+      break;
+    }
+    case '/': {
+      int b = s.top();
+      s.pop();
+      int a = s.top();
+      s.pop();
+      s.push(a / b);
+      break;
+    }
+    default: {
+      s.push(x - '0');
+      break;
+    }
     }
   }
   cout << s.top();

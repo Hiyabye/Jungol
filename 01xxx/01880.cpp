@@ -3,8 +3,11 @@
 using namespace std;
 
 void solve(void) {
-  string s; cin >> s; cin.ignore();
-  string t; getline(cin, t);
+  string s;
+  cin >> s;
+  cin.ignore();
+  string t;
+  getline(cin, t);
 
   for (char c : t) {
     if (c == ' ') cout << c;
